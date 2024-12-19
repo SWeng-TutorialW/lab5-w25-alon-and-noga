@@ -85,6 +85,7 @@ public class PrimaryController {
 
 	@Subscribe
 	public void onTurnEvent(TurnEvent event) {
+
 		Platform.runLater(() -> {
 			String turn = event.getTurn().getTurn();
 			if(turn.equals("END-DRAW")){
